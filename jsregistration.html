@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javaScript registration form</title>
+        <script>
+           function validateForm(){
+            var name=document.getElementById("name").value;
+            var password=document.getElementById("password").value;
+            var email=document.getElementById("email").value;
+            var phone=document.getElementById("phone").value;
+            if (name==" "){
+                alert("name cannot be empty");
+                return false;
+            }
+            if(password.length<6){
+                alert("password must be contain atleast 6 numbers");
+                return false;
+            }
+            var emailPattern=/^[^]+@[^]+\.[a-z]{2,3}$/;
+            if(!email.match(emailPattern)){
+                alert("enter valid email");
+                return false;
+            }
+            var phonePattern =/^[0-9]{10}$/;
+            if(!phone.match(phonePattern)){
+                alert("phone number should must be in 10 digits");
+                return false;
+            }
+            alert("Registration successfull");
+            return true;
+           }
+
+        </script>
+        </head>
+    <body>
+        <h2>Registration form</h2>
+       <form onsubmit="return validateForm()">
+        Name:
+        <input type="text" id="name"><br><br>
+        Password:
+        <input type="password" id="Password" ><br><br>
+        Email:
+        <input type="text" id="email"><br><br>
+        Phone:
+        <input type="text" id="phone"><br><br>
+        <input type="submit" value="submit">
+        <input type="reset"  value="reset">
+       </form>
+    </body>
+</html>

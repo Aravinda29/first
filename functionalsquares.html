@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>funtional programming that applies to every elements</title>
+    </head>
+    <body>
+        <h2>functional programming</h2>
+        <p id="result"></p>
+        <script>
+            const numbers=[1,2,3,4,5,6];
+            const squares=numbers.map(function(num){
+                return num*num;
+            });
+            document.getElementById("result").innerHTML="Squares:"+squares;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spread Operator Example</title>
+</head>
+
+<body>
+
+<h2>Spread Operator Demo</h2>
+
+<button onclick="mergeData()">Merge Arrays & Objects</button>
+
+<p id="output"></p>
+
+<script>
+
+function mergeData() {
+
+    // Arrays
+    const arr1 = [10, 20, 30];
+    const arr2 = [40, 50, 60];
+
+    const mergedArray = [...arr1, ...arr2];
+
+    // Objects
+    const student = {
+        name: "Aravinda",
+        age: 21
+    };
+
+    const course = {
+        branch: "CSE",
+        year: 3
+    };
+
+    const mergedObject = { ...student, ...course };
+
+    // Display Result
+    document.getElementById("output").innerHTML =
+        "<b>Merged Array:</b> " + mergedArray +
+        "<br><b>Merged Object:</b> " +
+        JSON.stringify(mergedObject);
+}
+
+</script>
+
+</body>
+</html>

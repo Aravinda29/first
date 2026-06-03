@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Promise Example</title>
+</head>
+
+<body>
+
+<h2>JavaScript Promise Example</h2>
+
+<button onclick="checkPromise()">Run Promise</button>
+
+<p id="result"></p>
+
+<script>
+
+function checkPromise(){
+
+    let myPromise=new Promise(function(resolve,reject){
+
+        let success= true;
+
+        if(success)
+
+        resolve("Promise is resolved!.");
+
+        else
+
+        reject("Promise is rejected!.");
+    });
+
+    myPromise
+
+    .then(function(message){
+
+        document.getElementById("result").innerHTML=message;
+    })
+
+    .catch(function(error){
+
+        document.getElementById("result").innerHTML=error;
+    });
+}
+</script>
+
+</body>
+</html>

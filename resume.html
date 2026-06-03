@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume</title>
+
+<style>
+
+/* Custom Cursor */
+body{
+    font-family: Arial;
+    cursor: crosshair;
+    background-color:lightblue;
+}
+
+/* Layer Style */
+.layer1{
+    position:absolute;
+    top:20px;
+    left:20px;
+    width:80%;
+    background:pink;
+    padding:20px;
+    z-index:2;
+    box-shadow:0px 0px 10px black;
+}
+
+.layer2{
+    position:absolute;
+    top:40px;
+    left:40px;
+    width:80%;
+    height:100%;
+    background:whitesmoke;
+    z-index:1;
+}
+
+/* Link Styles */
+a:link{
+    color:green;
+    text-decoration:none;
+}
+
+a:hover{
+    color:yellow;
+    text-decoration:underline;
+}
+
+a:visited{
+    color:violet;
+}
+
+h1{
+    color:#003366;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="layer2"></div>
+
+<div class="layer1">
+
+<h1>My Resume</h1>
+
+<h3>Personal Details</h3>
+<p><b>Name:</b> Aravinda</p>
+<p><b>Email:</b> aravinda@email.com</p>
+<p><b>Phone:</b> 9876543210</p>
+
+<h3>Education</h3>
+<ul>
+<li>B.Tech - CSE</li>
+<li>Intermediate</li>
+<li>SSC</li>
+</ul>
+
+<h3>Skills</h3>
+<ol>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ol>
+
+<h3>Links</h3>
+<a href="#">LinkedIn Profile</a><br>
+<a href="#">GitHub Profile</a>
+
+</div>
+
+</body>
+</html>

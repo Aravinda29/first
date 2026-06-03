@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Object Destructuring</title>
+</head>
+
+<body>
+
+<h2>Object Destructuring Example</h2>
+
+<p id="output"></p>
+
+<script>
+
+const student = {
+    name: "Aravinda",
+    age: 21,
+    branch: "CSE",
+    college: "KITSW College"
+};
+
+// Destructuring
+const {name, age, branch, college} = student;
+
+document.getElementById("output").innerHTML =
+    "Name: " + name + "<br>" +
+    "Age: " + age + "<br>" +
+    "Branch: " + branch + "<br>" +
+    "College: " + college;
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Function Declaration vs Expression</title>
+</head>
+
+<body>
+
+<h2>JavaScript Function Example</h2>
+
+<p id="result"></p>
+
+<script>
+
+// ---------- Function Declaration ----------
+function add(a, b) {
+    return a + b;
+}
+
+// Calling declaration function
+let result1 = add(5, 3);
+
+
+// ---------- Function Expression ----------
+const multiply = function(a, b) {
+    return a * b;
+};
+
+// Calling expression function
+let result2 = multiply(5, 3);
+
+
+// Display Output
+document.getElementById("result").innerHTML =
+"Function Declaration (Addition): " + result1 +
+"<br>Function Expression (Multiplication): " + result2;
+
+</script>
+
+</body>
+</html>

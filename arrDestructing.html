@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArrayDestructure</title>
+    </head>
+    <body>
+        <h2>array Destructuring</h2>
+        <p id="output"></p>
+        <script> 
+            const numbers=[10,20,30,40,50];
+            const[first,,third,,fifth]=numbers;
+            document.getElementById("output").innerHTML="First:"+first+"<br>"+"Third:"+third+"<br>"+"Fifth:"+fifth;
+        </script>
+    </body>
+</html>

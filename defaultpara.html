@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Default Parameters</title>
+</head>
+
+<body>
+
+<h2>Default Parameter Example</h2>
+
+<p id="result"></p>
+
+<script>
+
+// Function with Default Parameters
+function register(name = "Guest", course = "Web Design") {
+    return "Name: " + name + ", Course: " + course;
+}
+
+// Calling function
+let output1 = register("Aravinda", "React");
+let output2 = register();
+
+document.getElementById("result").innerHTML =
+output1 + "<br>" + output2;
+
+</script>
+
+</body>
+</html>

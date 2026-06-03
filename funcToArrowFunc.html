@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arrow Function Example</title>
+</head>
+
+<body>
+
+<h2>Function to Arrow Function Conversion</h2>
+
+<p id="output"></p>
+
+<script>
+
+// -------- Function WITHOUT Parameters --------
+
+// Normal Function
+function greet() {
+    return "Hello Student";
+}
+
+// Arrow Function
+const greetArrow = () => "Hello Student";
+
+
+// -------- Function WITH Parameters --------
+
+// Normal Function
+function add(a, b) {
+    return a + b;
+}
+
+// Arrow Function
+const addArrow = (a, b) => a + b;
+
+
+// Display Results
+document.getElementById("output").innerHTML =
+"Normal Function (No Parameter): " + greet() +
+"<br>Arrow Function (No Parameter): " + greetArrow() +
+"<br><br>Normal Function (With Parameter): " + add(5,3) +
+"<br>Arrow Function (With Parameter): " + addArrow(5,3);
+
+</script>
+
+</body>
+</html>
